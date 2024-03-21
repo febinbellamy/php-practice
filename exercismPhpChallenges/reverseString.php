@@ -1,6 +1,8 @@
 <?php 
 
 /* 
+https://exercism.org/tracks/php/exercises/reverse-string
+
 Introduction
 Reversing strings (reading them from right to left, rather than from left to right) is a surprisingly common task in programming.
 
