@@ -15,10 +15,12 @@ function isPangram(string $string): bool
 {
     $alphabetCounter = [];
     $alphabet = "abcdefghijklmnopqrstuvwxyz";
+    
     for($i = 0; $i < strlen($alphabet); $i++) {
         $currentChar = $alphabet[$i];
         $alphabetCounter[$currentChar] = 0;
     }
+    
     for($j = 0; $j < strlen($string); $j++) {
         $currentChar = strtolower($string[$j]);
         if (array_key_exists($currentChar, $alphabetCounter)) {
