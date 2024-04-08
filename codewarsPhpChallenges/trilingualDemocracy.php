@@ -48,9 +48,7 @@ Examples:
 // output is a single char from this set
   
 function trilingualDemocracy($group) {
-  
     $languagesCount = [];
-    
     for($i = 0; $i < strlen($group);$i++) {
       $currentChar = $group[$i];
       if (array_key_exists($currentChar, $languagesCount)) {
@@ -62,7 +60,6 @@ function trilingualDemocracy($group) {
     
     $returnKey = false;
     $keyWithOneCount = "";
-    
     foreach ($languagesCount as $language => $count) {
       if ($count === 3) {
         return $language;
